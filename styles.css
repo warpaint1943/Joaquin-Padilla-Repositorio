@@ -1,0 +1,467 @@
+@media screen and ( min-width:1px ) {
+    /* Inicio de Index */
+    .body, .bodyAboutUs, .portfolioBody {
+        overflow: auto;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .indexHeader, .headerAboutUs, .portfolioHeader, .headerCasa1 {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: space-evenly;
+        justify-content: center;
+        background-color: rgb(161, 172, 147);
+    }
+
+    .indexSectionLogo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(53, 83, 53);
+    }
+    #logoHeader {
+        display: flex;
+        justify-items: start;
+        flex-wrap: wrap;
+        width: 50px ;
+    }
+    #searchbar {
+        display: grid;
+        justify-items: end;
+    }
+
+    .indexSectionImages {
+        overflow: scroll;
+        margin-left: 11%;
+        margin-right: 11%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        background-color: rgba(128, 128, 128, 0.74);
+        border: solid rgb(161, 179, 161) 03px;
+        margin-top: 5%;
+    }
+
+    .divIndexSectionImages {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-content: space-between;
+        margin-left: 11%;
+        margin-right: 11%;
+        margin-top: 5%;
+    }
+     
+    .indexSectionLinks {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: center;
+        background-color: #465827;
+        color: white;
+        border: solid 02px rgba(255, 255, 255, 0.158);
+        transition: border 0.5s;
+    }
+    .links {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        
+        border-bottom: black solid 02px;
+    }
+
+    .links:hover {
+        border: solid black 03px;
+
+        background-color: white;
+    }
+    #searchbar {
+        border: white solid 02px;
+    }
+
+    .indexFooter, .FooterAboutUs, .portfolioFooter, .footerCasa1 {
+        background-color: #465827;
+        color: white;
+        border: solid 02px rgba(255, 255, 255, 0.158);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /*Fin de Index*/
+
+
+
+    /* Inicio de Sobre Nosotros */
+
+.sectionAboutUs, .portfolioSection, .sectionCasa1{
+    background-color: #465827;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    padding: 5%;
+}    
+
+
+#AboutUsEdificio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+        margin-left: 5%;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: start;
+
+}
+#AboutUsGenteImg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    width: 200px;
+    transition: 0.5s;
+    
+
+
+}
+#AboutUsGenteImg:hover {
+   border: solid black 03px ;
+   display: flex;
+   flex-wrap: wrap;
+   width: 250px;
+}
+#AboutUsP {
+    background-color: rgb(113, 136, 112);
+    border: white solid 02px;
+    display: flex;
+
+}
+
+
+    /* Fin de Sobre Nosotros */
+
+    /*Inicio Portfolio */
+
+    .sectionCasa1 {
+        display: grid;
+        overflow: auto;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr;
+        align-content: center;
+    }
+
+
+    #img1Portfolio {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 200px;
+          justify-content: start;
+          margin-left: 5%;
+          margin-top: 5%;
+    }
+
+    #casaEnMuestra1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 200px;
+        margin-left: 10%;
+        margin-top: 10%;
+
+    }
+    #casaEnMuestra1P {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex-wrap: wrap;
+        width: 300px;
+
+    }
+
+    #CasasEnfiladas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    #imagenesEnfiladas {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+    }
+
+    #img2Portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+    }
+   
+
+
+    /* Fin Portfolio */
+
+}
+
+
+/* ancho para celular y tablets */
+
+@media screen and (min-width:600px) {
+    #logoHeader {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70px;
+    }
+
+
+    .divIndexSectionImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .sectionAboutUs{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #AboutUsEdificio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: 5%;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: start;}
+
+        #AboutUsGenteImg {
+            display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: 5%;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: start;
+        }
+
+    #AboutUsP {
+        background-color: rgb(113, 136, 112);
+        border: solid white 02px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    /* parte casa en muestra 1 */
+    .sectionCasa1 {
+        display: grid;
+        overflow: auto;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr;
+        align-content: center;
+    }
+
+
+    #img1Portfolio {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 400px;
+          justify-content: start;
+          margin-left: 5%;
+          margin-top: 5%;
+    }
+
+    #casaEnMuestra1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 400px;
+        margin-left: 10%;
+        margin-top: 10%;
+
+    }
+    #casaEnMuestra1P {
+        background-color: grey;
+        margin: 5%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        flex-wrap: wrap;
+        width: 300px;
+         border: solid 02px white;
+    }
+
+    #CasasEnfiladas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    #imagenesEnfiladas {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+    }
+
+    #img2Portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    /*fin casa muestra 1 */
+}
+
+
+/* fin ancho celular tablet */
+
+
+/* laptop pc */
+
+@media screen and (min-width:1000px) {
+
+    #logoHeader {
+        display: flex;
+        flex-wrap: wrap;
+        width: 150px;
+    }
+
+
+
+    .divIndexSectionImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .sectionAboutUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    #AboutUsP {
+        background-color: rgb(113, 136, 112);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 200px;
+        border: solid white 02px;
+    }
+
+
+
+    #AboutUsEdificio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: 5%;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: start;}
+
+        #AboutUsGenteImg {
+            display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin-left: 5%;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: start;
+        }
+
+
+
+        /* casa muestra 1 */
+        .sectionCasa1 {
+            display: grid;
+            overflow: auto;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 1fr;
+            align-content: center;
+        }
+    
+    
+        #img1Portfolio {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              width: 400px;
+              justify-content: start;
+              margin-left: 5%;
+              margin-top: 5%;
+        }
+    
+        #casaEnMuestra1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 550px;
+            margin-left: 10%;
+            margin-top: 10%;
+    
+        }
+        #casaEnMuestra1P {
+            background-color: yellow;
+            margin: 5%;
+            margin-left: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            flex-wrap: wrap;
+            width: 400px;
+            border: solid white 02px;
+            font-family: Arial, Helvetica, sans-serif black;
+        }
+    
+        #CasasEnfiladas {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
+            width: 200px;
+        }
+    
+        #imagenesEnfiladas {
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+    
+        }
+        #img2Portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+        }
+}
+
+/* fin laptop pc */
